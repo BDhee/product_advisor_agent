@@ -12,7 +12,7 @@ def get_model(model:str, **args:dict)->BaseChatModel:
 
 def get_model_from_gcp()->ChatGoogleGenerativeAI:
     return ChatGoogleGenerativeAI(
-        model=os.getenv('MODEL_NAME',"gemini-3.5-flash-lite"), 
+        model=os.getenv('MODEL_NAME',"gemini-3.5-flash-lite"),  
         project= os.getenv('PROJECT_ID'),
         
         
